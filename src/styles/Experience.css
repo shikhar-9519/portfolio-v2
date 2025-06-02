@@ -1,0 +1,168 @@
+
+.experience-section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #3b82f6, #9333ea);
+}
+
+@media (min-width: 768px) {
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-item.even {
+    padding-right: 50%;
+    margin-right: 0;
+  }
+  
+  .timeline-item.odd {
+    padding-left: 50%;
+    margin-left: auto;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0.5rem;
+  top: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  border-radius: 50%;
+  border: 4px solid #0f172a;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .timeline-dot {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.timeline-content {
+  margin-left: 3rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.timeline-content.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .timeline-item.even .timeline-content {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+  
+  .timeline-item.odd .timeline-content {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+}
+
+.experience-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #334155;
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: scale(1.05);
+}
+
+.experience-period {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.experience-period.green {
+  background: linear-gradient(to right, #10b981, #059669);
+}
+
+.experience-period.blue {
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+}
+
+.experience-period.purple {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.experience-company {
+  font-size: 1.125rem;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.experience-location {
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievement-item {
+  color: #d1d5db;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-bullet {
+  color: #3b82f6;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.experience-link {
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+.experience-link:hover {
+  text-decoration: underline;
+}
