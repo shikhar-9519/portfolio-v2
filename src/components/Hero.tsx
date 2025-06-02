@@ -20,7 +20,7 @@ const Hero = () => {
           
           <div className="hero-subtitle">
             <span className="typing-container">
-              <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FFFFFF&center=true&vCenter=true&width=200&lines=Frontend+Engineer;React+Specialist;JavaScript+Enthusiast;UI%2FUX+Craftsman;DSA+Master" alt="Typing SVG" style={{height: "100px", marginTop: "16px"}}/>
+              <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FFFFFF&center=true&vCenter=true&width=260&lines=Frontend+Engineer;React+Specialist;JavaScript+Enthusiast;UI%2FUX+Craftsman;DSA+Master" alt="Typing SVG" style={{height: "100px", marginTop: "16px"}}/>
             </span>
           </div>
 
